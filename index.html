@@ -6,8 +6,16 @@
         <link rel="stylesheet" href="style.css">
         <link rel="icon" type="image/icon" href="icone.ico" />
         <script type="text/javascript">
-            alert("Bem-Vindo a Upulo! \nO nosso site está em construção! \nEstamos fazendo atualizações diariamente para que possamos entregá-lo o mais breve possível.\nAgradecemos a compreensão!");
-            function abrir1(){
+            adImagens = new Array ("cidade.jpg", "iphone.jpg", "entrega.jpeg");
+            thisAd = 0;
+            imgCt = adImagens.length ;
+            function alternar(){   
+                if (document.images)   {		if (thisAd == imgCt)	   {			thisAd = 0;	   }	   document.adBanner.src=adImagens[thisAd];
+            	document.adBanner.alt=adImagens[thisAd];
+                setTimeout("alternar()", 3 * 1000)
+                thisAd++;}}
+
+                function abrir1(){
                 document.getElementById('foto1').style.display = 'block';
                 document.getElementById('foto2').style.display = 'none';
                 document.getElementById('foto3').style.display = 'none';
@@ -121,7 +129,7 @@
 
         </script>
 </head>
-<body>
+<body onLoad="alternar();">
     <div id="corpo" class="corpo">
         <!-- Menu -->
         <div class="menu">
@@ -134,7 +142,7 @@
                 </ul> 
         </div>
         <div class="imagem-topo">
-            <img class='banner' src="banner.png">
+            <img id="banner" class='banner' src="cidade.jpg" name="adBanner" alt="" />>
         </div>
         <!--Postagens-->
         <div id="postagens" class="postagens">
