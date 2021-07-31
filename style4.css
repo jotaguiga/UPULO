@@ -62,6 +62,7 @@ a:hover{
 
 .upulo{
     border-radius: 7px;
+    max-height: 200px;
 }
 
 iframe{
