@@ -1,0 +1,102 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: url(fundo.jpg);
+}
+
+.logo{
+    display: inline-block;
+    padding: 25px;
+    width: 150px;
+    border-radius: 50%;
+
+
+}
+
+.menu{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    display: inline-block;
+    margin: 25px 25px;
+    font-size: 1em;
+}
+
+#equipe{
+    color: rgb(25, 90, 148);
+    background-color: white;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    border: 2px solid white;
+    border-radius: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    cursor: pointer;
+}
+
+a:hover{
+    color: rgb(25, 90, 148);
+    background-color: white;
+}
+
+hr{
+    width: 30%;
+    margin: 15px auto;
+    color: rgb(25, 90, 148);
+}
+
+.postagem{
+    margin: 30px 50px;
+    padding-top: 15px;
+    text-align: center;
+    border-radius: 30px;
+    background-image: linear-gradient(to bottom, #FFF, rgb(187, 205, 221));
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5em;
+    color: rgb(25, 90, 148);
+}
+
+.setae{
+    width: 50px;
+    display: inline-block;
+}
+
+.banner{
+    margin: 15px 30px;
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.setad{
+    width: 50px;
+    display: inline-block;
+}
+
+h2{
+    margin-top: 30px;
+}
+
+.texto{
+    margin-top: 15px;
+    padding: 15px;
+}
+
+#social{
+    width: 40px;
+    margin: 20px;
+}

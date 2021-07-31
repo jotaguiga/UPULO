@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upulo | Seu assistente digital</title>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="icon" type="image/icon" href="icone.ico"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <script>
+
+        function mouseEmCimae(imagem) {
+                imagem.src="esquerdah.png";
+                } 
+                function mouseForae(imagem) {
+                imagem.src="esquerda.png";
+                }
+
+                function mouseEmCimad(imagem) {
+                imagem.src="direitah.png";
+                } 
+                function mouseForad(imagem) {
+                imagem.src="direita.png";
+                }
+
+                function passar1() {
+                    document.getElementById("video").src ='clientes.mp4';
+                    document.getElementById("setae").setAttribute('onclick','passar5()');
+                    document.getElementById("setad").setAttribute('onclick','passar2()');
+                    document.getElementById("h2").innerHTML ='Cliente';
+                    document.getElementById("texto").innerHTML ='Olá me chamo Pedro Dantas, sou um jovem universitário, amante de tecnologia, inovação e resolução de problemas. Estou atualmente cursando administração na Universidade Federal da Bahia e foi dentro da universidade que se abriram as principais portas para minha carreira profissional. A primeira delas foi a Vitória no Maior Hackathon do Mundo organizado pela NASA, o Nasa Space Apps Challenge. Com isso consegui me desenvolver em áreas como, gestão em equipe, de projetos, apresentações de Pitch, metodologias Ágil, sem contar nas diversas conexões que mudaram o rumo da minha vida para o futuro, os projetos que venho construindo são hoje o que me movem no sentido profissional, buscando criar soluções para problemas reais da sociedade eu com certeza estarei sempre à procura de problemas e desafios que necessitam de solução, para resolvê-los através da inovação e da tecnologia.';
+                }
+
+                function passar2() {
+                    document.getElementById("video").src ='restaurante.mp4';
+                    document.getElementById("setae").setAttribute('onclick','passar1()');
+                    document.getElementById("setad").setAttribute('onclick','passar3()');
+                    document.getElementById("h2").innerHTML ='Restaurante';
+                    document.getElementById("texto").innerHTML ='Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, natus, quo amet obcaecati incidunt, at placeat voluptatibus perspiciatis harum dignissimos sed? Placeat, ducimus amet temporibus aliquid inventore aperiam ex quod.';
+                }
+
+                function passar3() {
+                    document.getElementById("video").src ='entregador.mp4';
+                    document.getElementById("setae").setAttribute('onclick','passar2()');
+                    document.getElementById("setad").setAttribute('onclick','passar1()');
+                    document.getElementById("h2").innerHTML ='Entregador';
+                    document.getElementById("texto").innerHTML ='Meu nome é Genilson Brito, tenho 20 anos, sou estudante de administração na UFBA e membro da equipe cafeína, vencedora mundial do Nasa Space Apps, o maior hackathon do mundo, estagiário comercial da startup SalvAr. Realizei na faculdade alguns projetos de extensão como participar da liga de mercado financeiro e atividades de monitoria. Sou uma pessoa muito focada e cada vez mais venho despertando interesse em empreendedorismo, inovação, startups e mudanças!';
+                }
+
+    </script>
+</head>
+<body>
+    <div id="menu" class="menu">
+
+        <img id="logo" class="logo" src="logo.jpg">
+
+        <ul>
+            <li class="li1"><a id="home" href="home.html">HOME</a></li>
+            <li class="li2"><a id="equipe" href="equipe.html">EQUIPE</a></li>
+            <li class="li3"><a id="chatbot" href="">CHATBOT</a></li>
+            <li class="li4"><a id="cadastro" href="cadastro.html">CADASTRE-SE</a></li>
+        </ul>
+    </div>            
+    
+    <div id="postagem" class="postagem">
+        <img id="setae" class="setae" src="esquerda.png" onMouseOver="mouseEmCimae(this)" onMouseOut="mouseForae(this)" onclick="passar3()">
+        <video controls id="video" class="video">
+            <source src="clientes.mp4" type="video/mp4">
+        </video>
+        <img id="setad" class="setad" src="direita.png" onMouseOver="mouseEmCimad(this)" onMouseOut="mouseForad(this)" onclick="passar2();">
+        <h2 id="h2" class="h2">Cliente</h2>
+        <hr>
+        <p id="texto" class="texto">Olá me chamo Pedro Dantas</p>
+    </div>
+    
+    
+</body>
+</html>

@@ -1,620 +1,68 @@
 * {
-    padding: 0px;
     margin: 0px;
+    padding: 0px;
 }
 
-html {
-    scroll-behavior: smooth;
-  }
-   
 body{
-     background: lightgrey;
-     width: 100%;
+    background: url(fundo.jpg);
+}
+
+.logo-circular{
+    display: block;
+}
+
+.logo{
+    display: block;
+    margin: auto;
+    padding: 25px;
+    width: 175px;
+    border-radius: 50%;
+    
+}
+
+.saudacao{
+    display: block;
+    text-align: center;
+    margin: 5px 0px;
+    color: white;
+    font-size: 1.3em;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 ul{
-    border-radius: 10%;
-    display: inline-block;
-    position: fixed;
-    background-color: rgba(14, 145, 252, 0.315);
-    margin: 10px;
     list-style: none;
 }
 
 li{
-    margin: 10px;
-}
-
-.menu a{
-    text-decoration: none;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 15px;
-}
-
-.menu a:visited{
-    color: white;
-}
-
-.menu a:hover{
-    color: black;
-}
-
-.imagem-topo{
-    height: 700px;
-}
-
-.banner{
-    height: 700px;
-    width: 100%;
-}
-
-.postagens{
-    margin: 0px;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-bottom: 10px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 700px;
-    background-image: linear-gradient(to bottom, rgb(255, 78, 90), rgb(255, 78, 90, 0.315));
-}
-
-.postagem1{
-    border-radius: 30px;
-    width: 80%;  
-    background-color: white;
-    padding: 5px;
-    text-align: center;
+    margin: 25px 50px;
+    font-size: 1em;
     
 }
 
-.postagem1 h2, p{
-    padding: 15px;
-}
-
-.postagem1 a{
-    text-decoration: none;
-    color: red;
-    padding: 15px;
-}
-
-.postagem1 a:hover{
-    color: black;
-}
-
-.postagem1 img{
-    width: 100px;
-    height: 200px;
-    display: block;
-    padding-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.formulario{
-    margin: 0px;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-bottom: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-image: linear-gradient(to bottom, rgb(255, 78, 90, 0.315), rgba(14, 145, 252, 0.315));
-    height: 700px;
-}
-
-.formulario1{
-    border-radius: 10px;
-    width: 60%;  
-    background-color: white;
-    padding: 5px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    
-}
-
-.formulario1 h2, p{
-    padding: 15px;
-}
-
-.form{
-    display: flex;
-    flex-direction: column;
-}
-
-.field{
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-}
-
-textarea{
-    height: 150px;
-}
-
-.videos{
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    background-image: linear-gradient(to bottom, rgba(14, 145, 252, 0.315), rgb(255, 78, 90, 0.315));
-}
-
-.video1{
-    border-radius: 10px;
-    width: 400px;  
-    background-color: white;
-    padding: 5px;
-    text-align: center;
-    margin: 5px;
-    margin-bottom: 10px; 
-    display: inline-block;
-}
-
-.video1 h2, p{
-    padding: 15px;
-    text-align: center;
-}
-
-.video1 a{
-    text-decoration: none;
-    color: red;
-}
-
-.video1 a:hover{
-    color: black;
-}
-
-.video1 video{
-    display: block;
-    padding-top: 10px;
-    margin: auto;
-    width: 45%;
-}
-
-.video2{
-    border-radius: 10px;
-    width: 400px;  
-    background-color: white;
-    padding: 5px;
-    text-align: center;
-    margin: 5px;
-    margin-bottom: 10px; 
-    display: inline-block;
-    align-content: center; 
-}
-
-.video2 h2, p{
-    padding: 15px;
-    text-align: center;
-}
-
-.video2 a{
-    text-decoration: none;
-    color: red;
-}
-
-.video2 a:hover{
-    color: black;
-}
-
-.video2 video{
-    display: block;
-    padding-top: 10px;
-    margin: auto;
-    width: 45%;
-}
-
-.video3{
-    border-radius: 10px;
-    width: 400px;  
-    background-color: white;
-    padding: 5px;
-    text-align: center;
-    margin: 5px;
-    margin-bottom: 10px; 
-    display: inline-block;
-    align-content: center; 
-}
-
-.video3 h2, p{
-    padding: 15px;
-    text-align: center;
-}
-
-.video3 a{
-    text-decoration: none;
-    color: red;
-}
-
-.video3 a:hover{
-    color: black;
-}
-
-.video3 video{
-    display: block;
-    padding-top: 10px;
-    margin: auto;
-    width: 45%;
-}
-
-.fotos{
-    padding-top: 20px;
-    padding-bottom: 10px;
-    text-align: center;
-    background-image: linear-gradient(to bottom, rgb(255, 78, 90, 0.315), rgba(14, 145, 252, 0.315));
-}
-
-.popup1{
-    border-radius: 10px;
-    width: 50%;  
-    background-color: white;
-    padding: 5px;
-    text-align: center;
-    margin: 10px;
-    display: none;
-    position: absolute;
-    top: 100px;
-    right: 350px;
-    margin: auto;
-}
-
-.popup1 img{
-    border-radius: 50%;
-    width: 175px;
-    height: 175px;
-    display: block;
-    padding-top: 10px;
-    margin: auto;
-}
-
-.popup1 a{
+a{
     text-decoration: none;
     color: white;
-    padding: 5px;
-    background-color: rgb(14, 145, 252);
-    border-radius: 10px;
-}
-
-.foto1{ 
-    border-radius: 10px;
-    width: 250px;  
-    background-color: white;
-    padding: 5px;
-    text-align: center;
-    margin: auto;
-    margin-bottom: 10px; 
-    display: inline-block;
-    align-content: center;
-}
-
-.foto1 h2, h3, p{
     padding: 15px;
-    font-size: 120%;
-    overflow: hidden;
-    text-align: center;
-}
-
-.foto1 a{
-    text-decoration: none;
-    color: white;
-    display: inline-block;
-    padding: 5px;
-    background-color: rgb(14, 145, 252);
-    border-radius: 10px;
-}
-
-
-.foto1 img{
-    border-radius: 50%;
-    width: 175px;
-    height: 175px;
-    display: block;
-    margin: auto;
-    padding-top: 10px;
-    align-content: center;
-}
-
-.popup2{
-    border-radius: 10px;
-    width: 50%;  
-    background-color: white;
-    padding: 5px;
-    text-align: center;
-    margin: 10px;
-    display: none;
-    position: absolute;
-    top: 100px;
-    right: 350px;
-    margin: auto;
-}
-
-.popup2 img{
-    border-radius: 50%;
-    width: 175px;
-    height: 175px;
-    display: block;
-    padding-top: 10px;
-    margin: auto;
-}
-
-.popup2 a{
-    text-decoration: none;
-    color: white;
-    padding: 5px;
-    background-color: rgb(14, 145, 252);
-    border-radius: 10px;
-}
-
-.foto2{ 
-    border-radius: 10px;
-    width: 250px;  
-    background-color: white;
-    padding: 5px;
-    text-align: center;
-    margin: auto;
-    margin-bottom: 10px; 
-    display: inline-block;
-    align-content: center;
-}
-
-.foto2 h2, h3, p{
-    padding: 15px;
-    font-size: 120%;
-    overflow: hidden;
-    text-align: center;
-}
-
-.foto2 a{
-    text-decoration: none;
-    color: white;
-    display: inline-block;
-    padding: 5px;
-    background-color: rgb(14, 145, 252);
-    border-radius: 10px;
-}
-
-
-.foto2 img{
-    border-radius: 50%;
-    width: 175px;
-    height: 175px;
-    display: block;
-    margin: auto;
-    padding-top: 10px;
-    align-content: center;
-}
-
-.popup3{
-    border-radius: 10px;
-    width: 50%;  
-    background-color: white;
-    padding: 5px;
-    text-align: center;
-    margin: 10px;
-    display: none;
-    position: absolute;
-    top: 100px;
-    right: 350px;
-    margin: auto;
-}
-
-.popup3 img{
-    border-radius: 50%;
-    width: 175px;
-    height: 175px;
-    display: block;
-    padding-top: 10px;
-    margin: auto;
-}
-
-.popup3 a{
-    text-decoration: none;
-    color: white;
-    padding: 5px;
-    background-color: rgb(14, 145, 252);
-    border-radius: 10px;
-}
-
-.foto3{ 
-    border-radius: 10px;
-    width: 250px;  
-    background-color: white;
-    padding: 5px;
-    text-align: center;
-    margin: auto;
-    margin-bottom: 10px; 
-    display: inline-block;
-    align-content: center;
-}
-
-.foto3 h2, h3, p{
-    padding: 15px;
-    font-size: 120%;
-    overflow: hidden;
-    text-align: center;
-}
-
-.foto3 a{
-    text-decoration: none;
-    color: white;
-    display: inline-block;
-    padding: 5px;
-    background-color: rgb(14, 145, 252);
-    border-radius: 10px;
-}
-
-
-.foto3 img{
-    border-radius: 50%;
-    width: 175px;
-    height: 175px;
-    display: block;
-    margin: auto;
-    padding-top: 10px;
-    align-content: center;
-}
-
-.popup4{
-    border-radius: 10px;
-    width: 50%;  
-    background-color: white;
-    padding: 5px;
-    text-align: center;
-    margin: 10px;
-    display: none;
-    position: absolute;
-    top: 100px;
-    right: 350px;
-    margin: auto;
-}
-
-.popup4 img{
-    border-radius: 50%;
-    width: 175px;
-    height: 175px;
-    display: block;
-    padding-top: 10px;
-    margin: auto;
-}
-
-.popup4 a{
-    text-decoration: none;
-    color: white;
-    padding: 5px;
-    background-color: rgb(14, 145, 252);
-    border-radius: 10px;
-}
-.foto4{ 
-    border-radius: 10px;
-    width: 250px;  
-    background-color: white;
-    padding: 5px;
-    text-align: center;
-    margin: auto;
-    margin-bottom: 10px; 
-    display: inline-block;
-    align-content: center;
-}
-
-.foto4 h2, h3, p{
-    padding: 15px;
-    font-size: 120%;
-    overflow: hidden;
-    text-align: center;
-}
-
-.foto4 a{
-    text-decoration: none;
-    color: white;
-    display: inline-block;
-    padding: 5px;
-    background-color: rgb(14, 145, 252);
-    border-radius: 10px;
-}
-
-
-.foto4 img{
-    border-radius: 50%;
-    width: 175px;
-    height: 175px;
-    display: block;
-    margin: auto;
-    padding-top: 10px;
-    align-content: center;
-}
-
-.popup5{
-    border-radius: 10px;
-    width: 50%;  
-    background-color: white;
-    padding: 5px;
-    text-align: center;
-    margin: 10px;
-    display: none;
-    position: absolute;
-    top: 100px;
-    right: 350px;
-    margin: auto;
-}
-
-.popup5 img{
-    border-radius: 50%;
-    width: 30%;
-    height: 30%;
-    display: inline-block;
-    padding-top: 10px;
-    margin: auto;
-}
-
-.popup5 a{
-    text-decoration: none;
-    color: white;
-    padding: 5px;
-    background-color: rgb(14, 145, 252);
-    border-radius: 10px;
-}
-
-.foto5{ 
-    border-radius: 10px;
-    width: 250px;  
-    background-color: white;
-    padding: 5px;
-    text-align: center;
-    margin: auto;
-    margin-bottom: 10px; 
-    display: inline-block;
-    align-content: center;
-}
-
-.foto5 h2, h3, p{
-    padding: 15px;
-    font-size: 120%;
-    overflow: hidden;
-    text-align: center;
-}
-
-.foto5 a{
-    text-decoration: none;
-    color: white;
-    display: inline-block;
-    padding: 5px;
-    background-color: rgb(14, 145, 252);
-    border-radius: 10px;
-}
-
-
-.foto5 img{
-    border-radius: 50%;
-    width: 175px;
-    height: 175px;
-    display: block;
-    margin: auto;
-    padding-top: 10px;
-    align-content: center;
-}
-
-.rodape{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-image: linear-gradient(to bottom, rgba(14, 145, 252, 0.315), rgb(255, 78, 90, 0.315));
-}
-
-.rodape p{
-    width: 30%;
-    border: solid white 1px;
-    background-color: white;
+    border: 2px solid white;
     border-radius: 30px;
-    margin: 0px;
-    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    cursor: pointer;
 }
+
+a:hover{
+    color: rgb(25, 90, 148);
+    background-color: white;
+}
+
