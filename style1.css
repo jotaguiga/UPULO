@@ -63,10 +63,25 @@ a:hover{
     color: rgb(25, 90, 148);
 }
 
+.imagens{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.banner1{
+    margin-top: 15px;
+    border-radius: 20px;
+    width: 60%;
+    margin: 10px;
+}
+
 .banner{
     margin-top: 15px;
     border-radius: 20px;
-    width: 85%;
+    max-width: 400px;
+    width: 30%;
+    margin: 10px;
 }
 
 .texto{
