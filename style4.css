@@ -59,11 +59,13 @@ a:hover{
 }
 
 .upulo{
-    width: 50%;
+    width: 52%;
+    min-width: 375px;
     height: 200px;
     min-height: 100px;
     border-radius: 7px;
-    min-width: 400px;
+    margin: auto;
+    display: block;
 }
 
 iframe{
