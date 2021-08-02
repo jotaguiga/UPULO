@@ -72,3 +72,29 @@ iframe{
     border: none;
     height: 520px;
 }
+
+@media (max-width: 600px){
+    .menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    ul{
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    li{
+        display: inline-block;
+        margin: 25px 5px;
+        font-size: 1em;
+    }
+
+    a{
+        padding: 10px;
+     }
+    }

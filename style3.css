@@ -56,7 +56,7 @@ a:hover{
 }
 
 .postagem{
-    margin: 30px 50px;
+    margin: 30px 20px;
     padding-top: 15px;
     text-align: center;
     border-radius: 30px;
@@ -107,4 +107,30 @@ hr{
 .texto{
     margin-top: 15px;
     padding: 15px;
+}
+
+@media (max-width: 600px){
+    .menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    ul{
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    li{
+        display: inline-block;
+        margin: 25px 5px;
+        font-size: 1em;
+    }
+
+    a{
+        padding: 10px;
+     }
 }
