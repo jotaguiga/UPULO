@@ -1,0 +1,155 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: url(fundo.jpg);
+}
+
+.logo{
+    padding: 10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+#mobile{
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    
+ }
+
+#menum{
+    background: white;
+    width: 50%;
+    border-radius: 25px;
+    display: none;
+}
+
+#menum #lim4 a{
+    color: white;
+    background-color: rgb(25, 90, 148); 
+}
+
+#ulm{
+    list-style: none;
+}
+
+.lim{
+    padding: 15px;
+}
+
+.am{
+    border: 1px solid rgb(25, 90, 148);
+    border-radius: 30px;
+    color: rgb(25, 90, 148);
+    padding: 10px;
+    text-decoration: none;
+}
+
+.am:hover{
+    color: white;
+    background-color: rgb(25, 90, 148);
+}
+
+#xm{
+    float: right;
+    width: 15px;
+}
+
+#menum hr{
+    width: 90%;
+    margin: auto auto;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+
+}
+
+#menu ul{
+    margin-left: 30px;
+    width: 60%;
+}
+
+#menu ul li{
+    display: inline-block;
+    margin: 25px 20px;
+    font-size: 1em;
+}
+
+#menu ul .li4 a{
+    color: rgb(25, 90, 148);
+    background-color: white;
+}
+
+#menu ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    border: 2px solid white;
+    border-radius: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    cursor: pointer;
+}
+
+#menu ul li a:hover{
+    color: rgb(25, 90, 148);
+    background-color: white;
+}
+
+.formulario{
+    margin: 30px 50px;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.upulo{
+    border-radius: 7px;
+    max-height: 200px;
+}
+
+iframe{
+    border: none;
+    height: 520px;
+}
+
+@media (max-width: 600px){
+    #mobile{
+        display: block;
+    }
+
+    #menum{
+        display: none;
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    #menu ul{
+        margin-left: 0px;
+        width: 100%;
+        display: none;
+    }
+
+    .logo{
+        width: 125px;
+        height: 125px;
+    }
+    }

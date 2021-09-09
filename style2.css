@@ -1,0 +1,199 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: url(fundo.jpg);
+}
+
+.logo{
+    padding: 10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+#mobile{
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    
+ }
+
+ #menum{
+    background: white;
+    width: 50%;
+    border-radius: 25px;
+    display: none;
+}
+
+#menum #lim2 a{
+    color: white;
+    background-color: rgb(25, 90, 148); 
+}
+
+#ulm{
+    list-style: none;
+}
+
+.lim{
+    padding: 15px;
+}
+
+.am{
+    border: 1px solid rgb(25, 90, 148);
+    border-radius: 30px;
+    color: rgb(25, 90, 148);
+    padding: 10px;
+    text-decoration: none;
+}
+
+.am:hover{
+    color: white;
+    background-color: rgb(25, 90, 148);
+}
+
+#xm{
+    float: right;
+    width: 15px;
+}
+
+#menum hr{
+    width: 90%;
+    margin: auto auto;
+}
+
+
+#menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+#menu ul{
+    margin-left: 30px;
+    width: 60%;
+}
+
+#menu li{
+    display: inline-block;
+    margin: 25px 20px;
+    font-size: 1em;
+}
+
+#menu ul .li2 a{
+    color: rgb(25, 90, 148);
+    background-color: white;
+}
+
+#equipe{
+    color: rgb(25, 90, 148);
+    background-color: white;
+}
+
+#menu ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    border: 2px solid white;
+    border-radius: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    cursor: pointer;
+}
+
+#menu ul li a:hover{
+    color: rgb(25, 90, 148);
+    background-color: white;
+}
+
+#menu hr{
+    width: 30%;
+    margin: 15px auto;
+    color: rgb(25, 90, 148);
+}
+
+.postagem{
+    margin: 30px 20px;
+    padding-top: 15px;
+    text-align: center;
+    border-radius: 30px;
+    background-image: linear-gradient(to bottom, #FFF, rgb(187, 205, 221));
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5em;
+    color: rgb(25, 90, 148);
+}
+
+.imagens{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.setae{
+    width: 30px;
+}
+
+.banner{
+    margin: 15px 30px;
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+}
+
+.setad{
+    width: 30px;
+}
+
+h2{
+    margin-top: 30px;
+}
+
+.texto{
+    margin-top: 15px;
+    padding: 15px;
+}
+
+#social{
+    width: 40px;
+    margin: 20px;
+}
+
+@media (max-width: 600px){
+    #mobile{
+        display: block;
+    }
+
+    #menum{
+        display: none;
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    #menu ul{
+        margin-left: 0px;
+        width: 100%;
+        display: none;
+    }
+
+    .logo{
+        width: 125px;
+        height: 125px;
+    }
+
+    .texto{
+        font-size: 15px;
+    }
+}

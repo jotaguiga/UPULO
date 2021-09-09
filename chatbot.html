@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upulo | Seu assistente digital</title>
+    <link rel="stylesheet" href="style3.css">
+    <script type="text/javascript" src="js3.js"></script>
+    <link rel="icon" type="image/icon" href="icone.ico"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="menu" class="menu">
+        <a id="mobile" onMouseOver="mouseEmCima(this)" onMouseOut="mouseFora(this)" onclick="abrirMenu()"><img id="menu2" src="3menu-2.png"></a>
+        <img id="logo" class="logo" src="logo.jpg">
+
+        <ul>
+            <li class="li1"><a id="home" href="home.html">HOME</a></li>
+            <li class="li2"><a id="equipe" href="equipe.html">EQUIPE</a></li>
+            <li class="li3"><a id="chatbot" href="">CHATBOT</a></li>
+            <li class="li4"><a id="cadastro" href="cadastro.html">CADASTRE-SE</a></li>
+        </ul>
+    </div>  
+    
+    <div id="menum">
+            
+        <ul id="ulm">
+            <li id="lim1" class="lim"><a class="am" href="home.html">HOME</a><img id="xm" src="versus.png" onclick="fecharMenu()"></li>
+            <hr>
+            <li id="lim2" class="lim"><a class="am" href="equipe.html">EQUIPE</a></li>
+            <hr>
+            <li id="lim3" class="lim"><a class="am" href="chatbot.html">CHATBOT</a></li>
+            <hr>
+            <li id="lim4" class="lim"><a class="am" href="cadastro.html">CADASTRE-SE</a></li>
+        </ul>
+    </div>
+    
+    <div id="postagem" class="postagem">
+            <div id="imagens" class="imagens">
+                <img id="setae" class="setae" src="esquerda.png" onMouseOver="mouseEmCimae(this)" onMouseOut="mouseForae(this)" onclick="passar3()">
+                <video controls id="video" class="video">
+                    <source src="clientes.mp4" type="video/mp4">
+                </video>
+                <img id="setad" class="setad" src="direita.png" onMouseOver="mouseEmCimad(this)" onMouseOut="mouseForad(this)" onclick="passar2();">
+            </div>
+        <h2 id="h2" class="h2">Cliente</h2>
+        <hr>
+        <p id="texto" class="texto">No vídeo acima demonstramos como funciona o chatbot na visão do cliente (consumidor).</p>
+        <p>Clique Play para iniciar.</p>
+    </div>
+    
+    
+</body>
+</html>
