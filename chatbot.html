@@ -6,56 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Upulo | Seu assistente digital</title>
     <link rel="stylesheet" href="style3.css">
+    <script type="text/javascript" src="js3.js"></script>
     <link rel="icon" type="image/icon" href="icone.ico"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
-
-    <script>
-
-        function mouseEmCimae(imagem) {
-                imagem.src="esquerdah.png";
-                } 
-                function mouseForae(imagem) {
-                imagem.src="esquerda.png";
-                }
-
-                function mouseEmCimad(imagem) {
-                imagem.src="direitah.png";
-                } 
-                function mouseForad(imagem) {
-                imagem.src="direita.png";
-                }
-
-                function passar1() {
-                    document.getElementById("video").src ='clientes.mp4';
-                    document.getElementById("setae").setAttribute('onclick','passar5()');
-                    document.getElementById("setad").setAttribute('onclick','passar2()');
-                    document.getElementById("h2").innerHTML ='Cliente';
-                    document.getElementById("texto").innerHTML ='No vídeo acima demonstramos como funciona o chatbot na visão do cliente (consumidor).';
-                }
-
-                function passar2() {
-                    document.getElementById("video").src ='restaurante.mp4';
-                    document.getElementById("setae").setAttribute('onclick','passar1()');
-                    document.getElementById("setad").setAttribute('onclick','passar3()');
-                    document.getElementById("h2").innerHTML ='Restaurante';
-                    document.getElementById("texto").innerHTML ='No vídeo acima demonstramos como funciona o chatbot na visão do restaurante (recebimento do pedido).';
-                }
-
-                function passar3() {
-                    document.getElementById("video").src ='entregador.mp4';
-                    document.getElementById("setae").setAttribute('onclick','passar2()');
-                    document.getElementById("setad").setAttribute('onclick','passar1()');
-                    document.getElementById("h2").innerHTML ='Entregador';
-                    document.getElementById("texto").innerHTML ='No vídeo acima demonstramos como funciona o chatbot na visão do motoboy (entregador).';
-                }
-
-    </script>
 </head>
 <body>
     <div id="menu" class="menu">
-
+        <a id="mobile" onMouseOver="mouseEmCima(this)" onMouseOut="mouseFora(this)" onclick="abrirMenu()"><img id="menu2" src="3menu-2.png"></a>
         <img id="logo" class="logo" src="logo.jpg">
 
         <ul>
@@ -64,7 +23,20 @@
             <li class="li3"><a id="chatbot" href="">CHATBOT</a></li>
             <li class="li4"><a id="cadastro" href="cadastro.html">CADASTRE-SE</a></li>
         </ul>
-    </div>            
+    </div>  
+    
+    <div id="menum">
+            
+        <ul id="ulm">
+            <li id="lim1" class="lim"><a class="am" href="home.html">HOME</a><img id="xm" src="versus.png" onclick="fecharMenu()"></li>
+            <hr>
+            <li id="lim2" class="lim"><a class="am" href="equipe.html">EQUIPE</a></li>
+            <hr>
+            <li id="lim3" class="lim"><a class="am" href="chatbot.html">CHATBOT</a></li>
+            <hr>
+            <li id="lim4" class="lim"><a class="am" href="cadastro.html">CADASTRE-SE</a></li>
+        </ul>
+    </div>
     
     <div id="postagem" class="postagem">
             <div id="imagens" class="imagens">

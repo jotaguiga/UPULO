@@ -14,6 +14,52 @@ body{
     border-radius: 50%;
 }
 
+#mobile{
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    
+ }
+
+ #menum{
+    background: white;
+    width: 50%;
+    border-radius: 25px;
+    display: none;
+}
+
+#ulm{
+    list-style: none;
+}
+
+.lim{
+    padding: 15px;
+}
+
+.am{
+    border: 1px solid rgb(25, 90, 148);
+    border-radius: 30px;
+    color: rgb(25, 90, 148);
+    padding: 10px;
+    text-decoration: none;
+}
+
+.am:hover{
+    color: white;
+    background-color: rgb(25, 90, 148);
+}
+
+#xm{
+    float: right;
+    width: 15px;
+}
+
+hr{
+    width: 90%;
+    margin: auto auto;
+}
+
 .menu{
     display: flex;
     flex-direction: row;
@@ -21,26 +67,31 @@ body{
     align-items: center;
     text-align: center;
     width: 100%;
-
 }
 
-ul{
+
+#menu ul{
     margin-left: 30px;
     width: 60%;
 }
 
-li{
+#menu li{
     display: inline-block;
     margin: 25px 20px;
     font-size: 1em;
 }
 
-.li1 a{
+#menu .li1 a{
     color: rgb(25, 90, 148);
     background-color: white; 
 }
 
-a{
+#menum #lim1 a{
+    color: white;
+    background-color: rgb(25, 90, 148); 
+}
+
+#menu ul li a{
     text-decoration: none;
     color: white;
     padding: 15px;
@@ -50,13 +101,15 @@ a{
     cursor: pointer;
 }
 
-a:hover{
+#menu ul li a:hover{
     color: rgb(25, 90, 148);
     background-color: white;
 }
 
+
+
 .postagem{
-    margin: 10px 20px;
+    margin: 20px 20px;
     padding-top: 15px;
     text-align: center;
     border-radius: 30px;
@@ -87,6 +140,14 @@ a:hover{
 }
 
 @media (max-width: 600px){
+    #mobile{
+        display: block;
+    }
+
+    #menum{
+        display: none;
+    }
+    
     .menu{
         display: flex;
         flex-direction: column;
@@ -96,23 +157,18 @@ a:hover{
         width: 100%;
     }
 
-    ul{
+    #menu ul{
         margin-left: 0px;
         width: 100%;
+        display: none;
     }
-
-    li{
-        display: inline-block;
-        margin: 25px 5px;
-        font-size: 1em;
-    }
-
-    a{
-        padding: 5px;
-     }
 
      .logo{
         width: 125px;
         height: 125px;
+    }
+
+    .texto{
+        font-size: 15px;
     }
 }
